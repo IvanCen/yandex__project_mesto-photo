@@ -11,11 +11,11 @@
 * Работа с макетом в Figma.  
 * Код проходил код ревью.  
 
-## Демо 
-![Main page](https://github.com/IvanCen/yandex__project_mesto-photo/blob/master/images/main_pic.png "Скрин главной страницы проекта")
-
 ## Как открыть?
 Пройти по ссылке: https://ivancen.github.io/yandex__project_mesto-photo/
+
+## Демо 
+![Main page](https://github.com/IvanCen/yandex__project_mesto-photo/blob/master/images/main_pic.png "Скрин главной страницы проекта")
 
 ## Стек технологий
 HTML, CSS, JavaScript.
