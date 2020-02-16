@@ -8,6 +8,7 @@ class PopupImage extends Popup {
             this.paramPopup.popupImage.classList.add('popup__image_is-opened');
             this.paramPopup.popup.classList.add('popup_is-opened');
             this.paramPopup.popupImage.style.backgroundImage = element.target.style.backgroundImage;
+            this.paramPopup.overlay.show();
         }
     }
 }

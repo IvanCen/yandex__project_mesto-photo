@@ -12,6 +12,7 @@ class PopupProfile extends Popup {
             this.paramPopup.formEdit.classList.add('popup__form_is-opened');
             this.paramPopup.popupContent.classList.add('popup__content_is-opened');
             this.formValidator.setSubmitButtonStateEdit();
+            this.paramPopup.overlay.show();
         }
     }
 }
