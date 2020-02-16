@@ -18,6 +18,7 @@ const userInfoName = document.querySelector('.user-info__name');
 const userInfoJob = document.querySelector('.user-info__job');
 const loader = document.querySelector('.loader');
 const container = document.querySelector('.places-list');
+const overlayVisible = document.querySelector('.overlay_visible');
 const option = {
   baseUrl: 'https://praktikum.tk/cohort7/',
   headers: {
@@ -25,6 +26,8 @@ const option = {
     'Content-Type': 'application/json'
   }
 };
+const overlay = new Overlay(popup);
+
 const paramPopup = {
   formNew,
   formEdit,
@@ -33,7 +36,8 @@ const paramPopup = {
   popupContent,
   popup,
   popupTitle,
-  root
+  root,
+  overlay
 }
 const inputs = {
   place,
@@ -59,6 +63,7 @@ const words = {
     validationUrl: 'Здесь должна быть ссылка'
   }
 };
+
 const api = new Api(option);
 const card = new Card(api);
 const cardList = new CardList(place, link);
@@ -69,6 +74,7 @@ const popupImageWindow = new PopupImage(paramPopup);
 const popupCard = new PopupCard(paramPopup, formValidator);
 const popupProfile = new PopupProfile(paramPopup, formValidator, userInfo);
 const popupAvatar = new PopupAvatar(paramPopup, formValidator);
+
 
 function updateUserAvatar(avatarInfo) {
   userInfo.updateUserAvatar(avatarInfo);

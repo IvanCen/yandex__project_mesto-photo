@@ -11,6 +11,7 @@ class PopupCard extends Popup {
             this.paramPopup.formNew.classList.add('popup__form_is-opened');
             this.paramPopup.popupContent.classList.add('popup__content_is-opened');
             this.formValidator.setSubmitButtonStateNew();
+            this.paramPopup.overlay.show();
         }
     }
 }

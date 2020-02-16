@@ -11,6 +11,7 @@ class PopupAvatar extends Popup {
             this.paramPopup.formAvatar.classList.add('popup__form_is-opened');
             this.paramPopup.popupContent.classList.add('popup__content_is-opened');
             this.formValidator.setSubmitButtonStateAvatar();
+            this.paramPopup.overlay.show();
         }
     }
 }
