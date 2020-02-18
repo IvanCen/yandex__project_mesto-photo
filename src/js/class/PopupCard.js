@@ -1,3 +1,4 @@
+import Popup from './Popup.js';
 export default class PopupCard extends Popup {
     constructor(paramPopup, formValidator) {
         super(paramPopup);

@@ -1,3 +1,4 @@
+import Popup from './Popup.js';
 export default class PopupProfile extends Popup {
     constructor(paramPopup, formValidator, userInfo) {
         super(paramPopup);

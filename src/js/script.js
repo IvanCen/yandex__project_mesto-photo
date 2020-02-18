@@ -3,11 +3,11 @@ import Card from './class/Card.js';
 import CardList from './class/CardList.js';
 import FormValidator from './class/FormValidator.js';
 import Overlay from './class/Overlay.js';
+import Popup from './class/Popup.js';
 import PopupAvatar from './class/PopupAvatar.js';
 import PopupCard from './class/PopupCard.js';
 import PopupImage from './class/PopupImage.js';
 import PopupProfile from './class/PopupProfile.js';
-import Popup from './class/Popup.js';
 import UserInfo from './class/UserInfo.js';
 import './../pages/index.css';
 
