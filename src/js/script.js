@@ -88,15 +88,15 @@ const popupProfile = new PopupProfile(paramPopup, formValidator, userInfo);
 const popupAvatar = new PopupAvatar(paramPopup, formValidator);
 
 
-function updateUserAvatar(avatarInfo) {
+export function updateUserAvatar(avatarInfo) {
   userInfo.updateUserAvatar(avatarInfo);
 }
 
-function updateUserData(cardInfo) {
+export function updateUserData(cardInfo) {
   userInfo.updateUserInfo(cardInfo.name, cardInfo.about);
 }
 
-function setUserData(cardInfo) {
+export function setUserData(cardInfo) {
   userInfo.setUserInfo(cardInfo);
   userInfo.updateUserInfo();
 }
@@ -105,7 +105,7 @@ function renderCards(cardsArr) {
   cardList.render(container, cardsArr, card);
 };
 
-function addCard(cardInfo) {
+export function addCard(cardInfo) {
   cardList.addCard(container, cardInfo, card);
 };
 
