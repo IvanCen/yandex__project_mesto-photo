@@ -40,10 +40,10 @@
     "url": "git+https://github.com/IvanCen/yandex__project_mesto-photo.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ivan Senkov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/IvanCen/yandex__project_mesto-photo/issues"
   },
-  "homepage": "https://github.com/IvanCen/yandex__project_mesto-photo#readme"
+  "homepage": "https://github.com/IvanCen/yandex__project_mesto-photo"
 }
