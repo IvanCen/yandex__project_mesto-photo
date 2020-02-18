@@ -1,0 +1,41 @@
+{
+  "name": "yandex__project_mesto-photo",
+  "version": "1.0.0",
+  "description": "* Интерфейс \"Место\" для расшаривания фото-карточек, разработан в рамках обучения Яндекс.Практикум.  \r * Создана логика:   \r   * Изменение аватара пользователя.  \r   * Редактирования имени пользователя.  \r   * Созданию/удалению фото-карточки (Только собственные).  \r   * Постановки/снятии лайка. \r * JavaScript написан на основе парадигмы ООП с использованием синтаксиса ECMAScript 6.\r * Страница сверстанны на чистом CSS с применением методологии БЭМ (архитектуры и именования классов).  \r * Работа с макетом в Figma.  \r * Код проходил код ревью.",
+  "main": "script.js",
+  "dependencies": {
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.1.4",
+    "cross-env": "^7.0.0",
+    "css-loader": "^3.4.2",
+    "file-loader": "^5.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "path": "^0.12.7",
+    "style-loader": "^1.1.3",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-md5-hash": "^0.0.6"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development --open --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanCen/yandex__project_mesto-photo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvanCen/yandex__project_mesto-photo/issues"
+  },
+  "homepage": "https://github.com/IvanCen/yandex__project_mesto-photo#readme"
+}

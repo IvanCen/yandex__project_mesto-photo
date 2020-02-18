@@ -1,3 +1,16 @@
+import Api from './class/Api.js.js';
+import Card from './class/Card.js.js';
+import CardList from './class/CardList';
+import FormValidator from './class/FormValidator';
+import Overlay from './class/Overlay';
+import PopupAvatar from './class/PopupAvatar';
+import PopupCard from './class/PopupCard';
+import PopupImage from './class/PopupImage';
+import PopupProfile from './class/PopupProfile';
+import Popup from './class/Popup';
+import UserInfo from './class/UserInfo';
+import './../pages/index.css';
+
 const root = document.querySelector('.root');
 const popup = document.querySelector('.popup');
 const formNew = document.forms.new;
@@ -18,7 +31,6 @@ const userInfoName = document.querySelector('.user-info__name');
 const userInfoJob = document.querySelector('.user-info__job');
 const loader = document.querySelector('.loader');
 const container = document.querySelector('.places-list');
-const overlayVisible = document.querySelector('.overlay_visible');
 const option = {
   baseUrl: 'https://praktikum.tk/cohort7/',
   headers: {
