@@ -1,4 +1,4 @@
-class PopupAvatar extends Popup {
+export default class PopupAvatar extends Popup {
     constructor(paramPopup, formValidator) {
         super(paramPopup);
         this.paramPopup.root.addEventListener('click', this.openAvatar.bind(this));

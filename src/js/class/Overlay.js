@@ -1,4 +1,4 @@
-class Overlay {
+export default class Overlay {
     constructor(popup) {
         this.popup = popup;
     }
