@@ -6,7 +6,7 @@
   "dependencies": {
     "babel-loader": "^8.0.6",
     "babel-polyfill": "^6.26.0",
-    "core-js": "^3.1.4",
+    "core-js": "^3.4.1",
     "cross-env": "^7.0.0",
     "css-loader": "^3.4.2",
     "file-loader": "^5.0.2",
@@ -20,6 +20,9 @@
     "webpack-md5-hash": "^0.0.6"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
     "webpack": "^4.41.6",
     "webpack-cli": "^3.3.11"
   },
