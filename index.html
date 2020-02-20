@@ -25,28 +25,21 @@
         <button class="button user-info__button">+</button>
       </div>
     </div>
-    <svg class="loader" version="1.1" id="L2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-  viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-<circle fill="none" stroke="#fff" stroke-width="4" stroke-miterlimit="10" cx="50" cy="50" r="48"/>
-<line fill="none" stroke-linecap="round" stroke="#fff" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="85" y2="50.5">
-  <animateTransform 
-       attributeName="transform" 
-       dur="2s"
-       type="rotate"
-       from="0 50 50"
-       to="360 50 50"
-       repeatCount="indefinite" />
-</line>
-<line fill="none" stroke-linecap="round" stroke="#fff" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="49.5" y2="74">
-  <animateTransform 
-       attributeName="transform" 
-       dur="15s"
-       type="rotate"
-       from="0 50 50"
-       to="360 50 50"
-       repeatCount="indefinite" />
-</line>
-</svg>
+    <svg class="loader" version="1.1" id="L2" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100"
+      enable-background="new 0 0 100 100" xml:space="preserve">
+      <circle fill="none" stroke="#fff" stroke-width="4" stroke-miterlimit="10" cx="50" cy="50" r="48" />
+      <line fill="none" stroke-linecap="round" stroke="#fff" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50"
+        x2="85" y2="50.5">
+        <animateTransform attributeName="transform" dur="2s" type="rotate" from="0 50 50" to="360 50 50"
+          repeatCount="indefinite" />
+      </line>
+      <line fill="none" stroke-linecap="round" stroke="#fff" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50"
+        x2="49.5" y2="74">
+        <animateTransform attributeName="transform" dur="15s" type="rotate" from="0 50 50" to="360 50 50"
+          repeatCount="indefinite" />
+      </line>
+    </svg>
     <div class="places-list root__section">
     </div>
     <div class="popup overlay">
@@ -54,24 +47,27 @@
         <img src="./images/close.svg" alt="" class="popup__close">
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" name="new" novalidate>
-          <input id="name" type="text" name="name" class="popup__input popup__input_type_name" placeholder="Название" required minlength="2" maxlength="30">
+          <input id="name" type="text" name="name" class="popup__input popup__input_type_name" placeholder="Название"
+            required minlength="2" maxlength="30">
           <span id="error-name" class="popup__error-message"></span>
           <input id="link" type="url" name="link" class="popup__input popup__input_type_link-url"
             placeholder="Ссылка на картинку" required>
-            <span id="error-link" class="popup__error-message"></span>
+          <span id="error-link" class="popup__error-message"></span>
           <button name='cardButton' class="button popup__button" disabled>+</button>
         </form>
-        <form class="popup__form" name="edit" novalidate >
-          <input id="nameAutor" type="text" name="nameAutor" class="popup__input popup__input_type_name" placeholder="Имя" required minlength="2" maxlength="30">
+        <form class="popup__form" name="edit" novalidate>
+          <input id="nameAutor" type="text" name="nameAutor" class="popup__input popup__input_type_name"
+            placeholder="Имя" required minlength="2" maxlength="30">
           <span id="error-nameAutor" class="popup__error-message"></span>
-          <input id="description" type="text" name="description" class="popup__input popup__input_type_link-url" placeholder="О себе" required minlength="2" maxlength="30">
+          <input id="description" type="text" name="description" class="popup__input popup__input_type_link-url"
+            placeholder="О себе" required minlength="2" maxlength="30">
           <span id="error-description" class="popup__error-message"></span>
           <button type name='editButton' class="button popup__button popup__button_type_edit">Сохранить</button>
         </form>
         <form class="popup__form" name="avatar" novalidate>
           <input id="avatar" type="url" name="avatar" class="popup__input popup__input_type_link-url"
             placeholder="Ссылка на аватар" required>
-            <span id="error-avatar" class="popup__error-message"></span>
+          <span id="error-avatar" class="popup__error-message"></span>
           <button name='avatarButton' class="button popup__button popup__button_type_edit" disabled>Сохранить</button>
         </form>
       </div>
@@ -80,7 +76,7 @@
       </div>
     </div>
   </div>
-  <script src="main.4a5e57afa3ee964cf7ee.js"></script>
+  <script type="module" src="main.4a5e57afa3ee964cf7ee.js"></script>
 </body>
 
 </html>
