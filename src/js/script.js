@@ -1,14 +1,14 @@
 import Api from './class/Api.js';
-import Card from './class/Card.js';
-import CardList from './class/CardList.js';
+import Card from '../blocks/place-card/Card.js';
+import CardList from '../blocks/places-list/CardList.js';
 import FormValidator from './class/FormValidator.js';
-import Overlay from './class/Overlay.js';
-import Popup from './class/Popup.js';
-import PopupAvatar from './class/PopupAvatar.js';
-import PopupCard from './class/PopupCard.js';
-import PopupImage from './class/PopupImage.js';
-import PopupProfile from './class/PopupProfile.js';
-import UserInfo from './class/UserInfo.js';
+import Overlay from '../blocks/overlay/Overlay.js';
+import Popup from '../blocks/popup/Popup.js';
+import PopupAvatar from '../blocks/popup/PopupAvatar.js';
+import PopupCard from '../blocks/popup/PopupCard.js';
+import PopupImage from '../blocks/popup/__image/PopupImage.js';
+import PopupProfile from '../blocks/popup/PopupProfile.js';
+import UserInfo from '../blocks/user-info/UserInfo.js';
 import './../pages/index.css';
 
 const root = document.querySelector('.root');
