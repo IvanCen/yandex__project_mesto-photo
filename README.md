@@ -27,7 +27,7 @@ HTML, CSS, JavaScript.
 Скопируйте проект на компьютер:
 
 ```
-git clone https://github.com/kirpinev/test.git
+git clone https://github.com/IvanCen/yandex__project_mesto-photo.git
 ```
 
 Установите зависимости:
