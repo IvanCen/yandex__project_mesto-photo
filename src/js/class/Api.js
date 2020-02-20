@@ -37,7 +37,6 @@ export default class Api {
                 return Promise.reject(`Ошибка: ${res.status}`);
             })
             .then((cardInfo) => {
-                console.log(cardInfo);
                 return cardInfo
             })
             .then(updateUserData)
@@ -129,9 +128,6 @@ export default class Api {
                 }
                 return Promise.reject(`Ошибка: ${res.status}`);
             })
-            .then((res) => {
-                console.log(res);
-            })
             .catch((err) => {
                 console.log('Карточка удалена...почти :)', err);
             });
@@ -149,9 +145,6 @@ export default class Api {
                 }
                 return Promise.reject(`Ошибка: ${res.status}`);
             })
-            .then((res) => {
-                console.log(res);
-            })
             .catch((err) => {
                 console.log('Ошибка. Запрос не выполнен: ', err);
             });
@@ -167,9 +160,6 @@ export default class Api {
                     return res.json();
                 }
                 return Promise.reject(`Ошибка: ${res.status}`);
-            })
-            .then((res) => {
-                console.log(res);
             })
             .catch((err) => {
                 console.log('Ошибка. Запрос не выполнен: ', err);
