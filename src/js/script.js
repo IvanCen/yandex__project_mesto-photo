@@ -1,3 +1,17 @@
+import Api from './class/Api.js';
+import Card from '../blocks/place-card/Card.js';
+import CardList from '../blocks/places-list/CardList.js';
+import FormValidator from './class/FormValidator.js';
+import Overlay from '../blocks/overlay/Overlay.js';
+import Popup from '../blocks/popup/Popup.js';
+import PopupAvatar from '../blocks/popup/PopupAvatar.js';
+import PopupCard from '../blocks/popup/PopupCard.js';
+import PopupImage from '../blocks/popup/__image/PopupImage.js';
+import PopupProfile from '../blocks/popup/PopupProfile.js';
+import UserInfo from '../blocks/user-info/UserInfo.js';
+import './../pages/index.css';
+
+const serverUrl = NODE_ENV === 'development'? 'http://praktikum.tk/cohort7/': 'https://praktikum.tk/cohort7/';
 const root = document.querySelector('.root');
 const popup = document.querySelector('.popup');
 const formNew = document.forms.new;
@@ -18,9 +32,8 @@ const userInfoName = document.querySelector('.user-info__name');
 const userInfoJob = document.querySelector('.user-info__job');
 const loader = document.querySelector('.loader');
 const container = document.querySelector('.places-list');
-const overlayVisible = document.querySelector('.overlay_visible');
 const option = {
-  baseUrl: 'https://praktikum.tk/cohort7/',
+  baseUrl: serverUrl,
   headers: {
     authorization: '06d98b9d-0650-4eb9-9bc3-34ae3e11679e',
     'Content-Type': 'application/json'
@@ -76,15 +89,15 @@ const popupProfile = new PopupProfile(paramPopup, formValidator, userInfo);
 const popupAvatar = new PopupAvatar(paramPopup, formValidator);
 
 
-function updateUserAvatar(avatarInfo) {
+export function updateUserAvatar(avatarInfo) {
   userInfo.updateUserAvatar(avatarInfo);
 }
 
-function updateUserData(cardInfo) {
+export function updateUserData(cardInfo) {
   userInfo.updateUserInfo(cardInfo.name, cardInfo.about);
 }
 
-function setUserData(cardInfo) {
+export function setUserData(cardInfo) {
   userInfo.setUserInfo(cardInfo);
   userInfo.updateUserInfo();
 }
@@ -93,7 +106,7 @@ function renderCards(cardsArr) {
   cardList.render(container, cardsArr, card);
 };
 
-function addCard(cardInfo) {
+export function addCard(cardInfo) {
   cardList.addCard(container, cardInfo, card);
 };
 

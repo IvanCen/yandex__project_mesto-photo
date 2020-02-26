@@ -1,4 +1,5 @@
-class PopupImage extends Popup {
+import Popup from '../Popup.js';
+export default class PopupImage extends Popup {
     constructor(paramPopup) {
         super(paramPopup);
         this.paramPopup.root.addEventListener('click', this.openWindow.bind(this));

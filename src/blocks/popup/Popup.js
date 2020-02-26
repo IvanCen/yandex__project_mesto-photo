@@ -1,4 +1,4 @@
-class Popup {
+export default class Popup {
     constructor(paramPopup) {
       this.paramPopup = paramPopup;  
       this.paramPopup.root.addEventListener('click', this.close.bind(this));

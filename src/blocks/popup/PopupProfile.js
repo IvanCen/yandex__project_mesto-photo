@@ -1,4 +1,5 @@
-class PopupProfile extends Popup {
+import Popup from './Popup.js';
+export default class PopupProfile extends Popup {
     constructor(paramPopup, formValidator, userInfo) {
         super(paramPopup);
         this.paramPopup.root.addEventListener('click', this.openProfile.bind(this));

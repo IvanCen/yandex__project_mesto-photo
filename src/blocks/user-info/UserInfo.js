@@ -1,4 +1,4 @@
-class UserInfo {
+export default class UserInfo {
     constructor(nameAutor, description, userInfoName ,userInfoJob) {
         this.userInfoPhoto = document.querySelector('.user-info__photo');
         this.userInfoLikes = document.querySelector('.place-card__like-counter')

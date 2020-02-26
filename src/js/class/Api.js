@@ -1,11 +1,12 @@
-class Api {
+import {setUserData, updateUserAvatar, updateUserData, addCard} from '../script.js';
+export default class Api {
     constructor(options) {
         this.options = options;
     }
     userInfoApi() {
         fetch(this.options.baseUrl + 'users/me', {
-            headers: this.options.headers
-        })
+                headers: this.options.headers
+            })
             .then(res => {
                 if (res.ok) {
                     return res.json();
@@ -22,13 +23,13 @@ class Api {
     }
     userUpdateApi(nameAutor, description, formValidator) {
         fetch(this.options.baseUrl + 'users/me', {
-            method: 'PATCH',
-            headers: this.options.headers,
-            body: JSON.stringify({
-                name: nameAutor.value,
-                about: description.value
+                method: 'PATCH',
+                headers: this.options.headers,
+                body: JSON.stringify({
+                    name: nameAutor.value,
+                    about: description.value
+                })
             })
-        })
             .then(res => {
                 if (res.ok) {
                     return res.json();
@@ -36,7 +37,6 @@ class Api {
                 return Promise.reject(`Ошибка: ${res.status}`);
             })
             .then((cardInfo) => {
-                console.log(cardInfo);
                 return cardInfo
             })
             .then(updateUserData)
@@ -49,12 +49,12 @@ class Api {
     }
     userUpdateAvatar(avatar, formValidator) {
         fetch(this.options.baseUrl + 'users/me/avatar', {
-            method: 'PATCH',
-            headers: this.options.headers,
-            body: JSON.stringify({
-                avatar: avatar.value
+                method: 'PATCH',
+                headers: this.options.headers,
+                body: JSON.stringify({
+                    avatar: avatar.value
+                })
             })
-        })
             .then(res => {
                 if (res.ok) {
                     return res.json();
@@ -74,8 +74,8 @@ class Api {
     }
     cardsApi(formValidator, renderCards) {
         fetch(this.options.baseUrl + 'cards', {
-            headers: this.options.headers
-        })
+                headers: this.options.headers
+            })
             .then(res => {
                 if (res.ok) {
                     return res.json();
@@ -95,13 +95,13 @@ class Api {
     }
     postCard(place, link) {
         return fetch(this.options.baseUrl + 'cards', {
-            method: 'POST',
-            headers: this.options.headers,
-            body: JSON.stringify({
-                name: `${place.value}`,
-                link: `${link.value}`
+                method: 'POST',
+                headers: this.options.headers,
+                body: JSON.stringify({
+                    name: `${place.value}`,
+                    link: `${link.value}`
+                })
             })
-        })
             .then(res => {
                 if (res.ok) {
                     return res.json();
@@ -119,17 +119,14 @@ class Api {
 
     deleteCard(id) {
         fetch(this.options.baseUrl + `cards/${id}`, {
-            method: 'DELETE',
-            headers: this.options.headers
-        })
+                method: 'DELETE',
+                headers: this.options.headers
+            })
             .then(res => {
                 if (res.ok) {
                     return res.json();
                 }
                 return Promise.reject(`Ошибка: ${res.status}`);
-            })
-            .then((res) => {
-                console.log(res);
             })
             .catch((err) => {
                 console.log('Карточка удалена...почти :)', err);
@@ -138,18 +135,15 @@ class Api {
 
     like(id) {
         fetch(this.options.baseUrl + `cards/like/${id}`, {
-            method: 'PUT',
-            headers: this.options.headers,
+                method: 'PUT',
+                headers: this.options.headers,
 
-        })
+            })
             .then(res => {
                 if (res.ok) {
                     return res.json();
                 }
                 return Promise.reject(`Ошибка: ${res.status}`);
-            })
-            .then((res) => {
-                console.log(res);
             })
             .catch((err) => {
                 console.log('Ошибка. Запрос не выполнен: ', err);
@@ -158,20 +152,18 @@ class Api {
 
     unlike(id) {
         fetch(this.options.baseUrl + `cards/like/${id}`, {
-            method: 'DELETE',
-            headers: this.options.headers
-        })
+                method: 'DELETE',
+                headers: this.options.headers
+            })
             .then(res => {
                 if (res.ok) {
                     return res.json();
                 }
                 return Promise.reject(`Ошибка: ${res.status}`);
             })
-            .then((res) => {
-                console.log(res);
-            })
             .catch((err) => {
                 console.log('Ошибка. Запрос не выполнен: ', err);
             });
     }
 }
+

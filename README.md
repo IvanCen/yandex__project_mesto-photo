@@ -19,9 +19,45 @@
 ## Демо 
 ![Main page](https://github.com/IvanCen/yandex__project_mesto-photo/blob/master/images/main_pic.png "Скрин главной страницы проекта")
 
+## Установка
+
+Перед началом работы необходимо проверить наличие установленного node.js и npm
+Были использованы версии для npm(6.13.7), для node.js(10.16.3)
+
+Скопируйте проект на компьютер:
+
+```
+git clone https://github.com/IvanCen/yandex__project_mesto-photo.git
+```
+
+Установите зависимости:
+
+```
+npm install
+```
+
+## Работа
+
+Для локальной разработки с поднятием сервера используйте:
+
+```
+npm run dev
+```
+
+Для сборки версии в продакшен:
+
+```
+npm run build
+```
+
+Для деплоя на сервисе GitHub Pages используйте:
+
+```
+npm run deploy
+```
+
 ## Стек технологий
 HTML, CSS, JavaScript, Webpack.
 
 ## Версия проекта
-1.0.0
-
+0.7.1

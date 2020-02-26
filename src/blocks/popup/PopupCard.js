@@ -1,4 +1,5 @@
-class PopupCard extends Popup {
+import Popup from './Popup.js';
+export default class PopupCard extends Popup {
     constructor(paramPopup, formValidator) {
         super(paramPopup);
         this.paramPopup.root.addEventListener('click', this.openCard.bind(this));
