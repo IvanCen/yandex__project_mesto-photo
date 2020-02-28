@@ -17,7 +17,7 @@
 Пройти по ссылке: https://ivancen.github.io/yandex__project_mesto-photo/
 
 ## Демо 
-![Main page](https://github.com/IvanCen/yandex__project_mesto-photo/blob/master/images/main_pic.png "Скрин главной страницы проекта")
+![Main page](https://github.com/IvanCen/yandex__project_mesto-photo/blob/master/src/images/main_pic.png "Скрин главной страницы проекта")
 
 ## Установка
 
