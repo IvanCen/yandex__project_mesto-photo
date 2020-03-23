@@ -43,13 +43,13 @@ const overlay = new Overlay(popup);
 
 const paramPopup = {
   formNew,
-  formEdit,
-  formAvatar,
-  popupImage,
-  popupContent,
-  popup,
   popupTitle,
+  formAvatar,
   root,
+  formEdit,
+  popupContent,
+  popupImage,
+  popup,
   overlay
 }
 const inputs = {
